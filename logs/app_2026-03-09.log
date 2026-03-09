@@ -2619,3 +2619,195 @@ LINE 2: ...                    SELECT id, 1 - (embedding <=> :embedding...
 2026-03-09 19:34:25 | INFO     | __main__:cmd_serve:80 — Dashboard at http://0.0.0.0:8050
 2026-03-09 19:45:41 | INFO     | scheduler.job_scheduler:stop:104 — Scheduler stopped.
 2026-03-09 19:45:41 | INFO     | scheduler.job_scheduler:stop:104 — Scheduler stopped.
+2026-03-09 20:52:21 | INFO     | __main__:cmd_init:27 — Initializing database...
+2026-03-09 20:52:21 | INFO     | database.connection:init_db:26 — Initializing database...
+2026-03-09 20:52:23 | INFO     | database.connection:init_db:31 — Database initialized successfully.
+2026-03-09 20:52:23 | INFO     | __main__:cmd_init:29 — Database ready.
+2026-03-09 20:53:00 | INFO     | database.connection:init_db:26 — Initializing database...
+2026-03-09 20:53:02 | INFO     | database.connection:init_db:31 — Database initialized successfully.
+2026-03-09 20:53:02 | INFO     | scrapers.scraper_manager:__init__:34 — ScraperManager: 1 scrapers — ['remoteok']
+2026-03-09 20:53:02 | INFO     | scrapers.scraper_manager:run_all:92 — ============================================================
+2026-03-09 20:53:02 | INFO     | scrapers.scraper_manager:run_all:93 — SCRAPE CONFIGURATION:
+2026-03-09 20:53:02 | INFO     | scrapers.scraper_manager:run_all:94 —   Countries:  ['Egypt']
+2026-03-09 20:53:02 | INFO     | scrapers.scraper_manager:run_all:95 —   Date range: 2026-03-02 18:53:02.886996 → 2026-03-09 18:53:02.886996
+2026-03-09 20:53:02 | INFO     | scrapers.scraper_manager:run_all:96 —   Max jobs:   5 per source/keyword
+2026-03-09 20:53:02 | INFO     | scrapers.scraper_manager:run_all:97 —   Keywords:   ['Artificial Intelligence', 'Machine Learning', 'Data Scientist', 'NLP Engineer', 'LLM Engineer', 'AI Engineer', 'Deep Learning']
+2026-03-09 20:53:02 | INFO     | scrapers.scraper_manager:run_all:98 —   Pages:      3
+2026-03-09 20:53:02 | INFO     | scrapers.scraper_manager:run_all:99 — ============================================================
+2026-03-09 20:53:02 | INFO     | scrapers.scraper_manager:run_all:122 — [remoteok] Scraping 'Artificial Intelligence'...
+2026-03-09 20:53:02 | INFO     | scrapers.remoteok_scraper:scrape:48 — [RemoteOK] Fetching: https://remoteok.com/api?tag=ai
+2026-03-09 20:53:04 | INFO     | scrapers.remoteok_scraper:scrape:65 — [RemoteOK] Got 96 listings from API
+2026-03-09 20:53:04 | INFO     | scrapers.remoteok_scraper:scrape:168 — [RemoteOK] Raw total: 1 jobs for 'Artificial Intelligence'
+2026-03-09 20:53:04 | INFO     | scrapers.base_scraper:filter_jobs:230 — [remoteok] Filtered out: 1 wrong country, 0 out of date range
+2026-03-09 20:53:04 | INFO     | scrapers.remoteok_scraper:scrape:172 — [RemoteOK] After filtering: 0 jobs
+2026-03-09 20:53:04 | INFO     | scrapers.scraper_manager:run_all:157 — [remoteok] 'Artificial Intelligence': 0 found, 0 new (1.6s)
+2026-03-09 20:53:04 | INFO     | scrapers.scraper_manager:run_all:122 — [remoteok] Scraping 'Machine Learning'...
+2026-03-09 20:53:04 | INFO     | scrapers.remoteok_scraper:scrape:48 — [RemoteOK] Fetching: https://remoteok.com/api?tag=machine-learning
+2026-03-09 20:53:05 | INFO     | scrapers.remoteok_scraper:scrape:65 — [RemoteOK] Got 0 listings from API
+2026-03-09 20:53:05 | INFO     | scrapers.remoteok_scraper:scrape:48 — [RemoteOK] Fetching: https://remoteok.com/api?tag=ai
+2026-03-09 20:53:06 | INFO     | scrapers.remoteok_scraper:scrape:65 — [RemoteOK] Got 96 listings from API
+2026-03-09 20:53:06 | INFO     | scrapers.remoteok_scraper:scrape:168 — [RemoteOK] Raw total: 2 jobs for 'Machine Learning'
+2026-03-09 20:53:06 | INFO     | scrapers.remoteok_scraper:scrape:172 — [RemoteOK] After filtering: 2 jobs
+2026-03-09 20:53:07 | INFO     | scrapers.scraper_manager:run_all:157 — [remoteok] 'Machine Learning': 2 found, 2 new (1.4s)
+2026-03-09 20:53:07 | INFO     | scrapers.scraper_manager:run_all:122 — [remoteok] Scraping 'Data Scientist'...
+2026-03-09 20:53:07 | INFO     | scrapers.remoteok_scraper:scrape:48 — [RemoteOK] Fetching: https://remoteok.com/api?tag=data-science
+2026-03-09 20:53:07 | INFO     | scrapers.remoteok_scraper:scrape:65 — [RemoteOK] Got 0 listings from API
+2026-03-09 20:53:07 | INFO     | scrapers.remoteok_scraper:scrape:48 — [RemoteOK] Fetching: https://remoteok.com/api?tag=ai
+2026-03-09 20:53:08 | INFO     | scrapers.remoteok_scraper:scrape:65 — [RemoteOK] Got 96 listings from API
+2026-03-09 20:53:08 | INFO     | scrapers.remoteok_scraper:scrape:168 — [RemoteOK] Raw total: 4 jobs for 'Data Scientist'
+2026-03-09 20:53:08 | INFO     | scrapers.remoteok_scraper:scrape:172 — [RemoteOK] After filtering: 4 jobs
+2026-03-09 20:53:09 | INFO     | scrapers.scraper_manager:run_all:157 — [remoteok] 'Data Scientist': 4 found, 2 new (1.6s)
+2026-03-09 20:53:09 | INFO     | scrapers.scraper_manager:run_all:122 — [remoteok] Scraping 'NLP Engineer'...
+2026-03-09 20:53:09 | INFO     | scrapers.remoteok_scraper:scrape:48 — [RemoteOK] Fetching: https://remoteok.com/api?tag=nlp
+2026-03-09 20:53:10 | INFO     | scrapers.remoteok_scraper:scrape:65 — [RemoteOK] Got 0 listings from API
+2026-03-09 20:53:10 | INFO     | scrapers.remoteok_scraper:scrape:48 — [RemoteOK] Fetching: https://remoteok.com/api?tag=ai
+2026-03-09 20:53:11 | INFO     | scrapers.remoteok_scraper:scrape:65 — [RemoteOK] Got 96 listings from API
+2026-03-09 20:53:11 | INFO     | scrapers.remoteok_scraper:scrape:168 — [RemoteOK] Raw total: 5 jobs for 'NLP Engineer'
+2026-03-09 20:53:11 | INFO     | scrapers.base_scraper:filter_jobs:230 — [remoteok] Filtered out: 1 wrong country, 0 out of date range
+2026-03-09 20:53:11 | INFO     | scrapers.remoteok_scraper:scrape:172 — [RemoteOK] After filtering: 4 jobs
+2026-03-09 20:53:12 | INFO     | scrapers.scraper_manager:run_all:157 — [remoteok] 'NLP Engineer': 4 found, 3 new (1.6s)
+2026-03-09 20:53:12 | INFO     | scrapers.scraper_manager:run_all:122 — [remoteok] Scraping 'LLM Engineer'...
+2026-03-09 20:53:12 | INFO     | scrapers.remoteok_scraper:scrape:48 — [RemoteOK] Fetching: https://remoteok.com/api?tag=ai
+2026-03-09 20:53:13 | INFO     | scrapers.remoteok_scraper:scrape:65 — [RemoteOK] Got 96 listings from API
+2026-03-09 20:53:13 | INFO     | scrapers.remoteok_scraper:scrape:168 — [RemoteOK] Raw total: 5 jobs for 'LLM Engineer'
+2026-03-09 20:53:13 | INFO     | scrapers.base_scraper:filter_jobs:230 — [remoteok] Filtered out: 1 wrong country, 0 out of date range
+2026-03-09 20:53:13 | INFO     | scrapers.remoteok_scraper:scrape:172 — [RemoteOK] After filtering: 4 jobs
+2026-03-09 20:53:14 | INFO     | scrapers.scraper_manager:run_all:157 — [remoteok] 'LLM Engineer': 4 found, 0 new (1.0s)
+2026-03-09 20:53:14 | INFO     | scrapers.scraper_manager:run_all:122 — [remoteok] Scraping 'AI Engineer'...
+2026-03-09 20:53:14 | INFO     | scrapers.remoteok_scraper:scrape:48 — [RemoteOK] Fetching: https://remoteok.com/api?tag=ai
+2026-03-09 20:53:15 | INFO     | scrapers.remoteok_scraper:scrape:65 — [RemoteOK] Got 96 listings from API
+2026-03-09 20:53:15 | INFO     | scrapers.remoteok_scraper:scrape:168 — [RemoteOK] Raw total: 5 jobs for 'AI Engineer'
+2026-03-09 20:53:15 | INFO     | scrapers.base_scraper:filter_jobs:230 — [remoteok] Filtered out: 1 wrong country, 0 out of date range
+2026-03-09 20:53:15 | INFO     | scrapers.remoteok_scraper:scrape:172 — [RemoteOK] After filtering: 4 jobs
+2026-03-09 20:53:16 | INFO     | scrapers.scraper_manager:run_all:157 — [remoteok] 'AI Engineer': 4 found, 1 new (1.0s)
+2026-03-09 20:53:16 | INFO     | scrapers.scraper_manager:run_all:122 — [remoteok] Scraping 'Deep Learning'...
+2026-03-09 20:53:16 | INFO     | scrapers.remoteok_scraper:scrape:48 — [RemoteOK] Fetching: https://remoteok.com/api?tag=machine-learning
+2026-03-09 20:53:16 | INFO     | scrapers.remoteok_scraper:scrape:65 — [RemoteOK] Got 0 listings from API
+2026-03-09 20:53:16 | INFO     | scrapers.remoteok_scraper:scrape:48 — [RemoteOK] Fetching: https://remoteok.com/api?tag=ai
+2026-03-09 20:53:17 | INFO     | scrapers.remoteok_scraper:scrape:65 — [RemoteOK] Got 96 listings from API
+2026-03-09 20:53:17 | INFO     | scrapers.remoteok_scraper:scrape:168 — [RemoteOK] Raw total: 5 jobs for 'Deep Learning'
+2026-03-09 20:53:17 | INFO     | scrapers.base_scraper:filter_jobs:224 — [remoteok] Reached max jobs limit (5)
+2026-03-09 20:53:17 | INFO     | scrapers.remoteok_scraper:scrape:172 — [RemoteOK] After filtering: 5 jobs
+2026-03-09 20:53:18 | INFO     | scrapers.scraper_manager:run_all:157 — [remoteok] 'Deep Learning': 5 found, 0 new (1.5s)
+2026-03-09 20:53:18 | INFO     | scrapers.scraper_manager:run_all:177 — Scraping complete: 23 found, 8 new, 0 errors
+2026-03-09 20:53:18 | INFO     | __main__:cmd_scrape:56 — Scraping complete: {'total_found': 23, 'total_new': 8, 'total_duplicate': 15, 'errors': 0, 'config': {'countries': ['Egypt'], 'date_from': '2026-03-02 18:53:02.886996', 'date_to': '2026-03-09 18:53:02.886996', 'max_jobs': 5}, 'by_source': {'remoteok': {'found': 23, 'new': 8, 'errors': 0}}}
+2026-03-09 20:55:28 | INFO     | database.connection:init_db:26 — Initializing database...
+2026-03-09 20:55:30 | INFO     | database.connection:init_db:31 — Database initialized successfully.
+2026-03-09 20:55:30 | INFO     | scrapers.scraper_manager:__init__:34 — ScraperManager: 1 scrapers — ['linkedin']
+2026-03-09 20:55:30 | INFO     | scrapers.scraper_manager:run_all:92 — ============================================================
+2026-03-09 20:55:30 | INFO     | scrapers.scraper_manager:run_all:93 — SCRAPE CONFIGURATION:
+2026-03-09 20:55:30 | INFO     | scrapers.scraper_manager:run_all:94 —   Countries:  ['Egypt']
+2026-03-09 20:55:30 | INFO     | scrapers.scraper_manager:run_all:95 —   Date range: 2026-03-02 18:55:30.223424 → 2026-03-09 18:55:30.223424
+2026-03-09 20:55:30 | INFO     | scrapers.scraper_manager:run_all:96 —   Max jobs:   10 per source/keyword
+2026-03-09 20:55:30 | INFO     | scrapers.scraper_manager:run_all:97 —   Keywords:   ['Artificial Intelligence', 'Machine Learning', 'Data Scientist', 'NLP Engineer', 'LLM Engineer', 'AI Engineer', 'Deep Learning']
+2026-03-09 20:55:30 | INFO     | scrapers.scraper_manager:run_all:98 —   Pages:      3
+2026-03-09 20:55:30 | INFO     | scrapers.scraper_manager:run_all:99 — ============================================================
+2026-03-09 20:55:30 | INFO     | scrapers.scraper_manager:run_all:122 — [linkedin] Scraping 'Artificial Intelligence'...
+2026-03-09 20:55:30 | INFO     | scrapers.linkedin_scraper:scrape:76 — [LinkedIn/Egypt] Page 1 for 'Artificial Intelligence' (time filter: r86400)
+2026-03-09 20:55:34 | INFO     | scrapers.base_scraper:filter_jobs:224 — [linkedin] Reached max jobs limit (10)
+2026-03-09 20:55:34 | INFO     | scrapers.linkedin_scraper:scrape:161 — [LinkedIn] Total after filtering: 10 jobs
+2026-03-09 20:55:35 | INFO     | scrapers.scraper_manager:run_all:157 — [linkedin] 'Artificial Intelligence': 10 found, 10 new (3.9s)
+2026-03-09 20:55:35 | INFO     | scrapers.scraper_manager:run_all:122 — [linkedin] Scraping 'Machine Learning'...
+2026-03-09 20:55:35 | INFO     | scrapers.linkedin_scraper:scrape:76 — [LinkedIn/Egypt] Page 1 for 'Machine Learning' (time filter: r86400)
+2026-03-09 20:55:40 | INFO     | scrapers.base_scraper:filter_jobs:224 — [linkedin] Reached max jobs limit (10)
+2026-03-09 20:55:40 | INFO     | scrapers.linkedin_scraper:scrape:161 — [LinkedIn] Total after filtering: 10 jobs
+2026-03-09 20:55:41 | INFO     | scrapers.scraper_manager:run_all:157 — [linkedin] 'Machine Learning': 10 found, 7 new (4.4s)
+2026-03-09 20:55:41 | INFO     | scrapers.scraper_manager:run_all:122 — [linkedin] Scraping 'Data Scientist'...
+2026-03-09 20:55:41 | INFO     | scrapers.linkedin_scraper:scrape:76 — [LinkedIn/Egypt] Page 1 for 'Data Scientist' (time filter: r86400)
+2026-03-09 20:55:45 | INFO     | scrapers.base_scraper:filter_jobs:224 — [linkedin] Reached max jobs limit (10)
+2026-03-09 20:55:45 | INFO     | scrapers.linkedin_scraper:scrape:161 — [LinkedIn] Total after filtering: 10 jobs
+2026-03-09 20:55:45 | INFO     | scrapers.scraper_manager:run_all:157 — [linkedin] 'Data Scientist': 10 found, 7 new (3.9s)
+2026-03-09 20:55:45 | INFO     | scrapers.scraper_manager:run_all:122 — [linkedin] Scraping 'NLP Engineer'...
+2026-03-09 20:55:45 | INFO     | scrapers.linkedin_scraper:scrape:76 — [LinkedIn/Egypt] Page 1 for 'NLP Engineer' (time filter: r86400)
+2026-03-09 20:55:48 | INFO     | scrapers.linkedin_scraper:scrape:76 — [LinkedIn/Egypt] Page 2 for 'NLP Engineer' (time filter: r86400)
+2026-03-09 20:55:49 | INFO     | scrapers.linkedin_scraper:scrape:161 — [LinkedIn] Total after filtering: 9 jobs
+2026-03-09 20:55:50 | INFO     | scrapers.scraper_manager:run_all:157 — [linkedin] 'NLP Engineer': 9 found, 8 new (3.8s)
+2026-03-09 20:55:50 | INFO     | scrapers.scraper_manager:run_all:122 — [linkedin] Scraping 'LLM Engineer'...
+2026-03-09 20:55:50 | INFO     | scrapers.linkedin_scraper:scrape:76 — [LinkedIn/Egypt] Page 1 for 'LLM Engineer' (time filter: r86400)
+2026-03-09 20:55:54 | INFO     | scrapers.linkedin_scraper:scrape:76 — [LinkedIn/Egypt] Page 2 for 'LLM Engineer' (time filter: r86400)
+2026-03-09 20:55:54 | INFO     | scrapers.linkedin_scraper:scrape:161 — [LinkedIn] Total after filtering: 9 jobs
+2026-03-09 20:55:55 | INFO     | scrapers.scraper_manager:run_all:157 — [linkedin] 'LLM Engineer': 9 found, 0 new (3.8s)
+2026-03-09 20:55:55 | INFO     | scrapers.scraper_manager:run_all:122 — [linkedin] Scraping 'AI Engineer'...
+2026-03-09 20:55:55 | INFO     | scrapers.linkedin_scraper:scrape:76 — [LinkedIn/Egypt] Page 1 for 'AI Engineer' (time filter: r86400)
+2026-03-09 20:55:58 | INFO     | scrapers.base_scraper:filter_jobs:224 — [linkedin] Reached max jobs limit (10)
+2026-03-09 20:55:58 | INFO     | scrapers.linkedin_scraper:scrape:161 — [LinkedIn] Total after filtering: 10 jobs
+2026-03-09 20:56:00 | INFO     | scrapers.scraper_manager:run_all:157 — [linkedin] 'AI Engineer': 10 found, 5 new (3.4s)
+2026-03-09 20:56:00 | INFO     | scrapers.scraper_manager:run_all:122 — [linkedin] Scraping 'Deep Learning'...
+2026-03-09 20:56:00 | INFO     | scrapers.linkedin_scraper:scrape:76 — [LinkedIn/Egypt] Page 1 for 'Deep Learning' (time filter: r86400)
+2026-03-09 20:56:04 | INFO     | scrapers.linkedin_scraper:scrape:76 — [LinkedIn/Egypt] Page 2 for 'Deep Learning' (time filter: r86400)
+2026-03-09 20:56:04 | INFO     | scrapers.linkedin_scraper:scrape:161 — [LinkedIn] Total after filtering: 9 jobs
+2026-03-09 20:56:06 | INFO     | scrapers.scraper_manager:run_all:157 — [linkedin] 'Deep Learning': 9 found, 5 new (4.7s)
+2026-03-09 20:56:06 | INFO     | scrapers.scraper_manager:run_all:177 — Scraping complete: 67 found, 42 new, 0 errors
+2026-03-09 20:56:06 | INFO     | __main__:cmd_scrape:56 — Scraping complete: {'total_found': 67, 'total_new': 42, 'total_duplicate': 25, 'errors': 0, 'config': {'countries': ['Egypt'], 'date_from': '2026-03-02 18:55:30.223424', 'date_to': '2026-03-09 18:55:30.223424', 'max_jobs': 10}, 'by_source': {'linkedin': {'found': 67, 'new': 42, 'errors': 0}}}
+2026-03-09 20:56:57 | INFO     | database.connection:init_db:26 — Initializing database...
+2026-03-09 20:56:59 | INFO     | database.connection:init_db:31 — Database initialized successfully.
+2026-03-09 20:56:59 | INFO     | scrapers.scraper_manager:__init__:34 — ScraperManager: 1 scrapers — ['wuzzuf']
+2026-03-09 20:56:59 | INFO     | scrapers.scraper_manager:run_all:92 — ============================================================
+2026-03-09 20:56:59 | INFO     | scrapers.scraper_manager:run_all:93 — SCRAPE CONFIGURATION:
+2026-03-09 20:56:59 | INFO     | scrapers.scraper_manager:run_all:94 —   Countries:  ['Egypt']
+2026-03-09 20:56:59 | INFO     | scrapers.scraper_manager:run_all:95 —   Date range: 2026-03-02 18:56:59.382247 → 2026-03-09 18:56:59.382247
+2026-03-09 20:56:59 | INFO     | scrapers.scraper_manager:run_all:96 —   Max jobs:   10 per source/keyword
+2026-03-09 20:56:59 | INFO     | scrapers.scraper_manager:run_all:97 —   Keywords:   ['Artificial Intelligence', 'Machine Learning', 'Data Scientist', 'NLP Engineer', 'LLM Engineer', 'AI Engineer', 'Deep Learning']
+2026-03-09 20:56:59 | INFO     | scrapers.scraper_manager:run_all:98 —   Pages:      3
+2026-03-09 20:56:59 | INFO     | scrapers.scraper_manager:run_all:99 — ============================================================
+2026-03-09 20:56:59 | INFO     | scrapers.scraper_manager:run_all:122 — [wuzzuf] Scraping 'Artificial Intelligence'...
+2026-03-09 20:56:59 | INFO     | scrapers.wuzzuf_scraper:scrape:27 — [Wuzzuf] Page 1 for 'Artificial Intelligence'
+2026-03-09 20:57:00 | INFO     | scrapers.wuzzuf_scraper:scrape:41 — [Wuzzuf] Found 14 job links on page 1
+2026-03-09 20:57:04 | INFO     | scrapers.wuzzuf_scraper:scrape:164 — [Wuzzuf] Raw total: 10 jobs for 'Artificial Intelligence'
+2026-03-09 20:57:04 | INFO     | scrapers.base_scraper:filter_jobs:230 — [wuzzuf] Filtered out: 0 wrong country, 6 out of date range
+2026-03-09 20:57:04 | INFO     | scrapers.wuzzuf_scraper:scrape:168 — [Wuzzuf] After filtering: 4 jobs
+2026-03-09 20:57:05 | INFO     | scrapers.scraper_manager:run_all:157 — [wuzzuf] 'Artificial Intelligence': 4 found, 4 new (4.8s)
+2026-03-09 20:57:05 | INFO     | scrapers.scraper_manager:run_all:122 — [wuzzuf] Scraping 'Machine Learning'...
+2026-03-09 20:57:05 | INFO     | scrapers.wuzzuf_scraper:scrape:27 — [Wuzzuf] Page 1 for 'Machine Learning'
+2026-03-09 20:57:05 | INFO     | scrapers.wuzzuf_scraper:scrape:41 — [Wuzzuf] Found 13 job links on page 1
+2026-03-09 20:57:08 | INFO     | scrapers.wuzzuf_scraper:scrape:164 — [Wuzzuf] Raw total: 10 jobs for 'Machine Learning'
+2026-03-09 20:57:08 | INFO     | scrapers.base_scraper:filter_jobs:230 — [wuzzuf] Filtered out: 0 wrong country, 9 out of date range
+2026-03-09 20:57:08 | INFO     | scrapers.wuzzuf_scraper:scrape:168 — [Wuzzuf] After filtering: 1 jobs
+2026-03-09 20:57:09 | INFO     | scrapers.scraper_manager:run_all:157 — [wuzzuf] 'Machine Learning': 1 found, 0 new (3.7s)
+2026-03-09 20:57:09 | INFO     | scrapers.scraper_manager:run_all:122 — [wuzzuf] Scraping 'Data Scientist'...
+2026-03-09 20:57:09 | INFO     | scrapers.wuzzuf_scraper:scrape:27 — [Wuzzuf] Page 1 for 'Data Scientist'
+2026-03-09 20:57:09 | INFO     | scrapers.wuzzuf_scraper:scrape:41 — [Wuzzuf] Found 15 job links on page 1
+2026-03-09 20:57:12 | INFO     | scrapers.wuzzuf_scraper:scrape:164 — [Wuzzuf] Raw total: 10 jobs for 'Data Scientist'
+2026-03-09 20:57:12 | INFO     | scrapers.base_scraper:filter_jobs:230 — [wuzzuf] Filtered out: 0 wrong country, 4 out of date range
+2026-03-09 20:57:12 | INFO     | scrapers.wuzzuf_scraper:scrape:168 — [Wuzzuf] After filtering: 6 jobs
+2026-03-09 20:57:13 | INFO     | scrapers.scraper_manager:run_all:157 — [wuzzuf] 'Data Scientist': 6 found, 5 new (3.0s)
+2026-03-09 20:57:13 | INFO     | scrapers.scraper_manager:run_all:122 — [wuzzuf] Scraping 'NLP Engineer'...
+2026-03-09 20:57:13 | INFO     | scrapers.wuzzuf_scraper:scrape:27 — [Wuzzuf] Page 1 for 'NLP Engineer'
+2026-03-09 20:57:13 | INFO     | scrapers.wuzzuf_scraper:scrape:41 — [Wuzzuf] Found 15 job links on page 1
+2026-03-09 20:57:16 | INFO     | scrapers.wuzzuf_scraper:scrape:164 — [Wuzzuf] Raw total: 10 jobs for 'NLP Engineer'
+2026-03-09 20:57:16 | INFO     | scrapers.base_scraper:filter_jobs:230 — [wuzzuf] Filtered out: 0 wrong country, 10 out of date range
+2026-03-09 20:57:16 | INFO     | scrapers.wuzzuf_scraper:scrape:168 — [Wuzzuf] After filtering: 0 jobs
+2026-03-09 20:57:16 | INFO     | scrapers.scraper_manager:run_all:157 — [wuzzuf] 'NLP Engineer': 0 found, 0 new (3.4s)
+2026-03-09 20:57:16 | INFO     | scrapers.scraper_manager:run_all:122 — [wuzzuf] Scraping 'LLM Engineer'...
+2026-03-09 20:57:16 | INFO     | scrapers.wuzzuf_scraper:scrape:27 — [Wuzzuf] Page 1 for 'LLM Engineer'
+2026-03-09 20:57:17 | INFO     | scrapers.wuzzuf_scraper:scrape:41 — [Wuzzuf] Found 12 job links on page 1
+2026-03-09 20:57:20 | INFO     | scrapers.wuzzuf_scraper:scrape:164 — [Wuzzuf] Raw total: 10 jobs for 'LLM Engineer'
+2026-03-09 20:57:20 | INFO     | scrapers.base_scraper:filter_jobs:230 — [wuzzuf] Filtered out: 0 wrong country, 9 out of date range
+2026-03-09 20:57:20 | INFO     | scrapers.wuzzuf_scraper:scrape:168 — [Wuzzuf] After filtering: 1 jobs
+2026-03-09 20:57:21 | INFO     | scrapers.scraper_manager:run_all:157 — [wuzzuf] 'LLM Engineer': 1 found, 1 new (4.2s)
+2026-03-09 20:57:21 | INFO     | scrapers.scraper_manager:run_all:122 — [wuzzuf] Scraping 'AI Engineer'...
+2026-03-09 20:57:21 | INFO     | scrapers.wuzzuf_scraper:scrape:27 — [Wuzzuf] Page 1 for 'AI Engineer'
+2026-03-09 20:57:22 | INFO     | scrapers.wuzzuf_scraper:scrape:41 — [Wuzzuf] Found 13 job links on page 1
+2026-03-09 20:57:25 | INFO     | scrapers.wuzzuf_scraper:scrape:164 — [Wuzzuf] Raw total: 10 jobs for 'AI Engineer'
+2026-03-09 20:57:25 | INFO     | scrapers.base_scraper:filter_jobs:230 — [wuzzuf] Filtered out: 0 wrong country, 7 out of date range
+2026-03-09 20:57:25 | INFO     | scrapers.wuzzuf_scraper:scrape:168 — [Wuzzuf] After filtering: 3 jobs
+2026-03-09 20:57:25 | INFO     | scrapers.scraper_manager:run_all:157 — [wuzzuf] 'AI Engineer': 3 found, 1 new (3.6s)
+2026-03-09 20:57:25 | INFO     | scrapers.scraper_manager:run_all:122 — [wuzzuf] Scraping 'Deep Learning'...
+2026-03-09 20:57:25 | INFO     | scrapers.wuzzuf_scraper:scrape:27 — [Wuzzuf] Page 1 for 'Deep Learning'
+2026-03-09 20:57:26 | INFO     | scrapers.wuzzuf_scraper:scrape:41 — [Wuzzuf] Found 15 job links on page 1
+2026-03-09 20:57:30 | INFO     | scrapers.wuzzuf_scraper:scrape:164 — [Wuzzuf] Raw total: 10 jobs for 'Deep Learning'
+2026-03-09 20:57:30 | INFO     | scrapers.base_scraper:filter_jobs:230 — [wuzzuf] Filtered out: 0 wrong country, 8 out of date range
+2026-03-09 20:57:30 | INFO     | scrapers.wuzzuf_scraper:scrape:168 — [Wuzzuf] After filtering: 2 jobs
+2026-03-09 20:57:30 | INFO     | scrapers.scraper_manager:run_all:157 — [wuzzuf] 'Deep Learning': 2 found, 1 new (4.9s)
+2026-03-09 20:57:30 | INFO     | scrapers.scraper_manager:run_all:177 — Scraping complete: 17 found, 12 new, 0 errors
+2026-03-09 20:57:30 | INFO     | __main__:cmd_scrape:56 — Scraping complete: {'total_found': 17, 'total_new': 12, 'total_duplicate': 5, 'errors': 0, 'config': {'countries': ['Egypt'], 'date_from': '2026-03-02 18:56:59.382247', 'date_to': '2026-03-09 18:56:59.382247', 'max_jobs': 10}, 'by_source': {'wuzzuf': {'found': 17, 'new': 12, 'errors': 0}}}
+2026-03-09 20:58:17 | INFO     | database.connection:init_db:26 — Initializing database...
+2026-03-09 20:58:18 | INFO     | database.connection:init_db:31 — Database initialized successfully.
+2026-03-09 20:58:18 | INFO     | ai_processing.duplicate_detector:__init__:18 — Loading embedding model: all-MiniLM-L6-v2
+2026-03-09 20:58:22 | INFO     | ai_processing.duplicate_detector:__init__:21 — Embedding model loaded. Similarity threshold: 0.92
+2026-03-09 20:58:23 | INFO     | ai_processing:process_unprocessed_jobs:33 — Processing 10 jobs with AI pipeline...
+2026-03-09 20:59:04 | INFO     | ai_processing.duplicate_detector:generate_embeddings:80 — Generated embeddings for 10 jobs.
+2026-03-09 20:59:04 | INFO     | ai_processing.duplicate_detector:detect_duplicates:99 — Checking 10 jobs for duplicates...
+2026-03-09 20:59:05 | INFO     | ai_processing.duplicate_detector:detect_duplicates:143 — Duplicate detection complete: 0 duplicates found.
+2026-03-09 20:59:05 | INFO     | ai_processing:process_unprocessed_jobs:71 — AI processing complete: {'summarized': 8, 'skills_extracted': 4, 'classified': 10, 'embeddings_generated': 10, 'duplicates_found': 0, 'errors': 0}
+2026-03-09 20:59:05 | INFO     | __main__:cmd_process:66 — Processing complete: {'summarized': 8, 'skills_extracted': 4, 'classified': 10, 'embeddings_generated': 10, 'duplicates_found': 0, 'errors': 0}
