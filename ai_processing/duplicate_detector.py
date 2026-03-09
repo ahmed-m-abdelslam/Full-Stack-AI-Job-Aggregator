@@ -9,8 +9,8 @@ from utils.logger import logger
 
 class DuplicateDetector:
     def __init__(self):
-        self.client = OpenAI(api_key=settings.OPENAI_API_KEY)
-        self.threshold = settings.SIMILARITY_THRESHOLD
+        self.client = OpenAI(api_key=settings.openai_api_key)
+        self.threshold = settings.duplicate_similarity_threshold
         logger.info(f"Using OpenAI embeddings. Similarity threshold: {self.threshold}")
 
     def _get_embedding(self, texts: list[str]) -> list[list[float]]:
