@@ -70,7 +70,6 @@ def cmd_process(args):
 def cmd_serve(args):
     from web_app.app import create_app
     from scheduler.job_scheduler import JobScheduler
-    import os
 
     init_db()
 
@@ -79,8 +78,7 @@ def cmd_serve(args):
 
     app = create_app()
 
-    # Railway بيبعت PORT كـ environment variable
-    port = int(os.environ.get("PORT", settings.dash_port))
+    port = settings.get_port()
     host = settings.dash_host
 
     logger.info(f"Dashboard at http://{host}:{port}")
@@ -89,10 +87,11 @@ def cmd_serve(args):
         app.run(
             host=host,
             port=port,
-            debug=False,  # لازم False في production
+            debug=settings.dash_debug,
         )
     finally:
         scheduler.stop()
+
 
 
 
