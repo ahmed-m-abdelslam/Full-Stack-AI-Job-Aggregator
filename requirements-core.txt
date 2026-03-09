@@ -1,0 +1,36 @@
+# Web Scraping
+requests
+beautifulsoup4
+lxml
+fake-useragent
+httpx
+
+# AI / NLP
+openai
+sentence-transformers
+scikit-learn
+numpy
+tiktoken
+
+# Database
+sqlalchemy
+psycopg2-binary
+alembic
+pgvector
+
+# Web Dashboard
+dash
+dash-bootstrap-components
+dash-ag-grid
+plotly
+
+# Scheduling
+apscheduler
+
+# Utilities
+python-dotenv
+pydantic
+pydantic-settings
+loguru
+tenacity
+

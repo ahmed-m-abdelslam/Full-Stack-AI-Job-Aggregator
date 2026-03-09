@@ -1,0 +1,272 @@
+/* === AI Job Aggregator — Light Theme === */
+
+:root {
+    --primary: #4f46e5;
+    --primary-dark: #3730a3;
+    --primary-light: #6366f1;
+    --bg-main: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-input: #f1f5f9;
+    --text-primary: #1e293b;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    --border: #e2e8f0;
+    --success: #16a34a;
+    --warning: #ca8a04;
+    --danger: #dc2626;
+    --info: #2563eb;
+    --radius: 12px;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    background-color: var(--bg-main) !important;
+    color: var(--text-primary) !important;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+    min-height: 100vh;
+}
+
+/* Header */
+.dashboard-header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.dashboard-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    margin: 0;
+}
+
+.dashboard-subtitle {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 0.9rem;
+    margin: 0.25rem 0 0 0;
+}
+
+/* Stat Cards */
+.stat-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary) !important;
+    line-height: 1.2;
+}
+
+.stat-label {
+    color: var(--text-secondary) !important;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-top: 0.25rem;
+}
+
+/* Filter Panel */
+.filter-panel {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.filter-label {
+    color: var(--text-secondary) !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+}
+
+/* Dropdown overrides — Light mode */
+.Select-control,
+.dash-dropdown .Select-control {
+    background-color: var(--bg-input) !important;
+    border-color: var(--border) !important;
+    color: var(--text-primary) !important;
+}
+
+.Select-value-label,
+.Select-placeholder {
+    color: var(--text-primary) !important;
+}
+
+.Select-menu-outer {
+    background-color: var(--bg-card) !important;
+    border-color: var(--border) !important;
+}
+
+.Select-option {
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+}
+
+.Select-option.is-focused {
+    background-color: #eef2ff !important;
+    color: var(--primary) !important;
+}
+
+.Select-option.is-selected {
+    background-color: var(--primary) !important;
+    color: #ffffff !important;
+}
+
+/* Input overrides */
+input[type="text"],
+.dash-input {
+    background-color: var(--bg-input) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text-primary) !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.9rem !important;
+}
+
+input[type="text"]:focus,
+.dash-input:focus {
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15) !important;
+    outline: none !important;
+}
+
+input[type="text"]::placeholder {
+    color: var(--text-muted) !important;
+}
+
+/* AG Grid — Light Theme */
+.ag-theme-alpine-dark,
+.ag-theme-alpine {
+    --ag-background-color: var(--bg-card) !important;
+    --ag-header-background-color: #f1f5f9 !important;
+    --ag-header-foreground-color: var(--text-primary) !important;
+    --ag-foreground-color: var(--text-primary) !important;
+    --ag-data-color: var(--text-primary) !important;
+    --ag-secondary-foreground-color: var(--text-secondary) !important;
+    --ag-odd-row-background-color: #f8fafc !important;
+    --ag-row-hover-color: #eef2ff !important;
+    --ag-border-color: var(--border) !important;
+    --ag-font-family: 'Inter', sans-serif !important;
+    --ag-font-size: 13px !important;
+    --ag-selected-row-background-color: #e0e7ff !important;
+    --ag-range-selection-background-color: #e0e7ff !important;
+    border-radius: var(--radius) !important;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+/* AG Grid header text */
+.ag-header-cell-text {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+}
+
+/* AG Grid cell text */
+.ag-cell {
+    color: var(--text-primary) !important;
+}
+
+/* AG Grid pagination */
+.ag-paging-panel {
+    color: var(--text-secondary) !important;
+}
+
+.ag-paging-button {
+    color: var(--text-primary) !important;
+}
+
+/* AG Grid links */
+.ag-cell a {
+    color: var(--primary) !important;
+    text-decoration: none !important;
+    font-weight: 500 !important;
+}
+
+.ag-cell a:hover {
+    text-decoration: underline !important;
+}
+
+/* Modal */
+.modal-content {
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15) !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid var(--border) !important;
+    color: var(--text-primary) !important;
+}
+
+.modal-title {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+}
+
+.modal-body {
+    color: var(--text-primary) !important;
+}
+
+.modal-body strong {
+    color: var(--text-primary) !important;
+}
+
+.modal-body p {
+    color: var(--text-secondary) !important;
+}
+
+.modal-body h6 {
+    color: var(--text-primary) !important;
+    font-weight: 600 !important;
+}
+
+/* Close button */
+.btn-close {
+    filter: none !important;
+}
+
+/* Bootstrap overrides for light mode */
+.card, .bg-dark {
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+}
+
+hr {
+    border-color: var(--border) !important;
+}
+
+/* Footer */
+.text-center.py-4.mt-4 {
+    color: var(--text-muted) !important;
+    font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-header { padding: 1rem; }
+    .stat-card { margin-bottom: 0.75rem; }
+    .filter-panel { padding: 1rem; }
+}

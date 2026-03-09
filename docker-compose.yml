@@ -1,0 +1,63 @@
+version: "3.9"
+
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: ai_jobs_db
+      POSTGRES_USER: jobuser
+      POSTGRES_PASSWORD: jobpassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jobuser -d ai_jobs_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ====== الخيار 1: بدون Glassdoor (أسرع — بدون Chromium) ======
+  app:
+    build:
+      context: .
+      target: light       # ← ده اللي بيخليه سريع
+    command: full --countries Egypt --days 7 --max-jobs 50 --sources remoteok,indeed,linkedin,wuzzuf
+    ports:
+      - "8050:8050"
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql://jobuser:jobpassword@db:5432/ai_jobs_db
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+    profiles:
+      - light
+
+  # ====== الخيار 2: مع Glassdoor (بطيء في البيلد — بيحتاج Chromium) ======
+  app-full:
+    build:
+      context: .
+      target: full         # ← ده بيثبت Chromium
+    command: full --countries Egypt --days 7 --max-jobs 50
+    ports:
+      - "8050:8050"
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql://jobuser:jobpassword@db:5432/ai_jobs_db
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./logs:/app/logs
+    restart: unless-stopped
+    profiles:
+      - full
+
+volumes:
+  pgdata:
