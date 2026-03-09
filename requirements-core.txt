@@ -34,3 +34,5 @@ pydantic-settings
 loguru
 tenacity
 
+selenium
+webdriver-manager

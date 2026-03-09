@@ -12,6 +12,7 @@ class Settings(BaseSettings):
         default="postgresql://jobuser:jobpassword@localhost:5432/ai_jobs_db",
         alias="DATABASE_URL",
     )
+    
 
     # OpenAI
     openai_api_key: str = Field(default="", alias="OPENAI_API_KEY")
@@ -62,10 +63,16 @@ class Settings(BaseSettings):
         default=0.92, alias="DUPLICATE_SIMILARITY_THRESHOLD"
     )
 
-    # Web App
+    # # Web App
+    # dash_host: str = Field(default="0.0.0.0", alias="DASH_HOST")
+    # dash_port: int = Field(default=8050, alias="DASH_PORT")
+    # dash_debug: bool = Field(default=True, alias="DASH_DEBUG")
+
+        # Web App — Railway بيبعت PORT كـ environment variable
     dash_host: str = Field(default="0.0.0.0", alias="DASH_HOST")
-    dash_port: int = Field(default=8050, alias="DASH_PORT")
-    dash_debug: bool = Field(default=True, alias="DASH_DEBUG")
+    dash_port: int = Field(default=8050, alias="PORT")  # ← غيرنا من DASH_PORT لـ PORT
+    dash_debug: bool = Field(default=False, alias="DASH_DEBUG")  # ← False في production
+
 
     # Search keywords
     search_keywords: list[str] = Field(

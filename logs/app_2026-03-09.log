@@ -2591,3 +2591,31 @@ LINE 2: ...                    SELECT id, 1 - (embedding <=> :embedding...
 2026-03-09 14:26:23 | INFO     | ai_processing:process_unprocessed_jobs:71 — AI processing complete: {'summarized': 0, 'skills_extracted': 0, 'classified': 18, 'embeddings_generated': 20, 'duplicates_found': 1, 'errors': 0}
 2026-03-09 14:32:00 | INFO     | scheduler.job_scheduler:stop:104 — Scheduler stopped.
 2026-03-09 14:32:01 | INFO     | scheduler.job_scheduler:stop:68 — Scheduler stopped.
+2026-03-09 19:34:14 | INFO     | database.connection:init_db:26 — Initializing database...
+2026-03-09 19:34:14 | INFO     | database.connection:init_db:31 — Database initialized successfully.
+2026-03-09 19:34:14 | INFO     | scrapers.scraper_manager:__init__:34 — ScraperManager: 3 scrapers — ['remoteok', 'linkedin', 'wuzzuf']
+2026-03-09 19:34:14 | INFO     | ai_processing.duplicate_detector:__init__:18 — Loading embedding model: all-MiniLM-L6-v2
+2026-03-09 19:34:17 | INFO     | ai_processing.duplicate_detector:__init__:21 — Embedding model loaded. Similarity threshold: 0.92
+2026-03-09 19:34:17 | INFO     | scheduler.job_scheduler:start:93 — ============================================================
+2026-03-09 19:34:17 | INFO     | scheduler.job_scheduler:start:94 — SCHEDULER STARTED — Automatic Updates Enabled
+2026-03-09 19:34:17 | INFO     | scheduler.job_scheduler:start:95 — ============================================================
+2026-03-09 19:34:17 | INFO     | scheduler.job_scheduler:start:98 —   Scheduled: Daily Evening Scrape (8:00 PM) — Next run: 2026-03-09 20:00:00+02:00
+2026-03-09 19:34:17 | INFO     | scheduler.job_scheduler:start:98 —   Scheduled: AI Processing Every 4 Hours — Next run: 2026-03-09 23:34:17.445336+02:00
+2026-03-09 19:34:17 | INFO     | scheduler.job_scheduler:start:98 —   Scheduled: Daily Morning Scrape (8:00 AM) — Next run: 2026-03-10 08:00:00+02:00
+2026-03-09 19:34:17 | INFO     | scheduler.job_scheduler:start:99 — ============================================================
+2026-03-09 19:34:17 | INFO     | __main__:cmd_serve:80 — Dashboard at http://0.0.0.0:8050
+2026-03-09 19:34:22 | INFO     | database.connection:init_db:26 — Initializing database...
+2026-03-09 19:34:22 | INFO     | database.connection:init_db:31 — Database initialized successfully.
+2026-03-09 19:34:22 | INFO     | scrapers.scraper_manager:__init__:34 — ScraperManager: 3 scrapers — ['remoteok', 'linkedin', 'wuzzuf']
+2026-03-09 19:34:22 | INFO     | ai_processing.duplicate_detector:__init__:18 — Loading embedding model: all-MiniLM-L6-v2
+2026-03-09 19:34:25 | INFO     | ai_processing.duplicate_detector:__init__:21 — Embedding model loaded. Similarity threshold: 0.92
+2026-03-09 19:34:25 | INFO     | scheduler.job_scheduler:start:93 — ============================================================
+2026-03-09 19:34:25 | INFO     | scheduler.job_scheduler:start:94 — SCHEDULER STARTED — Automatic Updates Enabled
+2026-03-09 19:34:25 | INFO     | scheduler.job_scheduler:start:95 — ============================================================
+2026-03-09 19:34:25 | INFO     | scheduler.job_scheduler:start:98 —   Scheduled: Daily Evening Scrape (8:00 PM) — Next run: 2026-03-09 20:00:00+02:00
+2026-03-09 19:34:25 | INFO     | scheduler.job_scheduler:start:98 —   Scheduled: AI Processing Every 4 Hours — Next run: 2026-03-09 23:34:25.786055+02:00
+2026-03-09 19:34:25 | INFO     | scheduler.job_scheduler:start:98 —   Scheduled: Daily Morning Scrape (8:00 AM) — Next run: 2026-03-10 08:00:00+02:00
+2026-03-09 19:34:25 | INFO     | scheduler.job_scheduler:start:99 — ============================================================
+2026-03-09 19:34:25 | INFO     | __main__:cmd_serve:80 — Dashboard at http://0.0.0.0:8050
+2026-03-09 19:45:41 | INFO     | scheduler.job_scheduler:stop:104 — Scheduler stopped.
+2026-03-09 19:45:41 | INFO     | scheduler.job_scheduler:stop:104 — Scheduler stopped.
